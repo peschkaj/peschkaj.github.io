@@ -15,15 +15,78 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="style.css" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Contact Jermiah</title>
+    <style type="text/css">
+      html,
+      body {
+        height: 100%;
+      }
+    </style>
+    <title>Contact Jeremiah</title>
   </head>
   <body>
-    <div class="jumbotron jumbotron-fluid">
-      <div class="container">
-        <h1>Contacting Jeremiah</h1>
-        <p>Honestly, don't.</p>
-        
+    <header>
+      <img src="images/ctc.jpg" class="bg" />
+    </header>
+    <nav class="navbar navbar-expand-lg">
+      <ul class="navbar-nav">
+        <ol class="nav-item">
+          <a href="about.html">about</a>
+        </ol>
+        <ol class="nav-item active">
+          <a href="projects.html">projects</a>
+        </ol>
+        <ol class="nav-item">
+          <a href="https://facility9.com">blog</a>
+        </ol>
+        <ol class="nav-item">
+          <a href="contact.html">contact</a>
+        </ol>
+      </ul>
+    </nav>
+
+    <div class="container h-100">
+      <div class="about-header">
+        <h1>contact jeremiah</h1>
+
+        <div class="row" style="padding-left: 2em;">
+          <form action="mailto:goaway@legit.biz">
+            <div class="form-group">
+              <label for="name">Your Name</label><br />
+              <input
+                name="name"
+                class="form-control"
+                type="text"
+                placeholder="Rando McSandwich"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Your Email Address</label><br />
+              <input
+                name="email"
+                class="form-control"
+                type="text"
+                placeholder="email.is.bad@gmail.nope"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="ugh">What do you want?</label><br />
+              <textarea
+                cols="30"
+                id="ugh"
+                name="ugh"
+                class="form-control"
+                rows="10"
+                placeholder="I want candy!"
+              ></textarea>
+            </div>
+
+            <input name="SendEmail" type="submit" value="Send Email" />
+          </form>
+        </div>
       </div>
     </div>
   </body>

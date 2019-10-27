@@ -1,3 +1,5 @@
+
+
 body {
   background-color: lightsteelblue;
 }
@@ -73,4 +75,10 @@ img.bg {
 
 .proj-row {
   margin-bottom: 2em;
+}
+
+#contact-form {
+  border: 1px solid black;
+  margin-left: auto;
+  margin-right: auto;
 }
