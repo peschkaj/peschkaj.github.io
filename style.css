@@ -66,3 +66,11 @@ img.bg {
   background-color: rgba(255, 255, 255, 0.95);
   border-left: 1px solid slategrey;
 }
+
+.proj-title {
+  font-weight: bold;
+}
+
+.proj-row {
+  margin-bottom: 2em;
+}

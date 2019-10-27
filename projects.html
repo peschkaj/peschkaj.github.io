@@ -1,12 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Projects</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <header>
+      <img src="images/rox.jpg" class="bg" />
+    </header>
+    <nav class="navbar  navbar-expand-lg">
+      <ul class="navbar-nav">
+        <ol class="nav-item">
+          <a href="about.html">about</a>
+        </ol>
+        <ol class="nav-item active">
+          <a href="projects.html">projects</a>
+        </ol>
+        <ol class="nav-item">
+          <a href="https://facility9.com">blog</a>
+        </ol>
+        <ol class="nav-item">
+          <a href="contact.html">contact</a>
+        </ol>
+      </ul>
+    </nav>
+    <div class="container">
+      <div class="about-header">
+        <h1>projects</h1>
+      </div>
+      <div class="row proj-row">
+        <div class="col-3"><img src="images/qemu.gif" width="100%" /></div>
+        <div class="col-9">
+          <span class="proj-title">Bare Metal OS</span> A bare metal operating
+          system written in the
+          <a href="https://habit-lang.org">Habit</a> functional programming
+          language.
+        </div>
+      </div>
+      <div class="row proj-row">
+        <div class="col-3">
+          <img src="images/flk.jpg" width="100%" alt="" />
+        </div>
+        <div class="col-9">
+          <span class="proj-title">
+            <a href="https://github.com/peschkaj/rustflakes">rustflakes</a>
+          </span>
+          is an integer ID generation service written in Rust. Several integer
+          sizes are supported, but the default integer is a 128-bit integer.
+          Integers are always increasing and unique per computer generating the
+          identifer. By default, a flake contains the 64-bit timestamp (in ms),
+          48-bits of worker identifier, and a 16-bit discriminator counter that
+          rolls over every millisecond.
+        </div>
+      </div>
+
+      <div class="row proj-row">
+        <div class="col-3"><img src="images/rdc.jpg" width="100%" /></div>
+        <div class="col-6">
+          <span class="proj-title">
+            <a href="https://github.com/peschkaj/riak-dotnet-client">
+              Riak Dotnet Client
+            </a>
+          </span>
+          is a client for the Riak distributed database. The client is
+          implemented in idiomatic C# and handles connection pooling, server
+          pool management, and the construction of both search and map-reduce
+          queries against Riak. In addition, only truly exceptional events raise
+          exceptions; all other interaction between the client and user code
+          occurs through <code>Maybe</code> and <code>Either</code>
+          types, minimizing stack unwinding and maximizing performance.
+        </div>
+      </div>
+      <div class="row proj-row">
+        <div class="col-3"><img src="images/crg.jpg" width="100%" /></div>
+        <div class="col-6">
+          <span class="proj-title">
+            <a href="https://github.com/peschkaj/corgmacs">corgmacs</a>
+          </span>
+          is my heavily customized emacs configuration. Most of my time on a
+          computer is spent inside of emacs and I use it to handle writing code,
+          taking notes, managing my calendar, reading and writing email, and
+          just about everything I can get away with.
+        </div>
+      </div>
+      <div class="row proj-row">
+        <div class="col-3"><img src="images/dot.jpg" width="100%" /></div>
+        <div class="col-6">
+          <span class="proj-title"
+            ><a href="https://github.com/peschkaj/dotfiles">dotfiles</a></span
+          >
+          is a collection of my system configuration files spread across
+          multiple operating systems.
+        </div>
+      </div>
+      <div class="row proj-row">
+        <div class="col-3"><img src="images/irc.jpg" width="100%" /></div>
+        <div class="col-6">
+          <span class="proj-title">
+            <a href="https://github.com/peschkaj/irc.py">irc.py</a>
+          </span>
+          is a particularly lazy implementation of an IRC server in Python,
+          originally written for the course CS594 - Internetworking Protocols.
+          Both the client and server are written in Python. Custom serialization
+          code is used to shoot bits over the wire.
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
